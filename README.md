@@ -122,7 +122,7 @@
   epochs = 20
   x_axis = range(1, epochs + 1)
 
-#验证数据上的损失曲线
+  #验证数据上的损失曲线
   original_loss = original_history.history['val_loss']
   L1_loss = L1_history.history['val_loss']
   L2_loss = L2_history.history['val_loss']
@@ -140,7 +140,7 @@
   plt.ylabel('Validation Loss')
   plt.legend()
 
-#验证数据上的精度曲线
+  #验证数据上的精度曲线
   original_acc = original_history.history['val_acc']
   L1_acc = L1_history.history['val_acc']
   L2_acc = L2_history.history['val_acc']
@@ -159,7 +159,7 @@
   plt.legend()
 
 
-#原始模型的损失以及精度比较
+  #原始模型的损失以及精度比较
   origin_train_loss = original_history.history['loss']
   origin_trian_acc  = original_history.history['acc']
 
